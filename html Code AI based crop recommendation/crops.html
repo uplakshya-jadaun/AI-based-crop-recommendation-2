@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Crops</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="/">🌱 Crop Recommendation</a>
+      <div class="collapse navbar-collapse">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link active" href="crops.html">Crops</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Crops Section -->
+  <div class="container my-5">
+    <h1 class="text-success mb-4">Explore Crops</h1>
+    <input type="text" id="cropSearch" class="form-control mb-4" placeholder="Search crops...">
+
+    <div class="row" id="cropList">
+      <!-- Wheat Card -->
+      <div class="col-md-3 crop-card">
+        <div class="card" data-bs-toggle="modal" data-bs-target="#wheatModal">
+          <img src="wheat.webp" class="card-img-top" alt="Wheat">
+          <div class="card-body">
+            <h5 class="card-title">Wheat</h5>
+          </div>
+        </div>
+      </div>
+
+      <!-- Rice Card -->
+      <div class="col-md-3 crop-card">
+        <div class="card" data-bs-toggle="modal" data-bs-target="#riceModal">
+          <img src="rice.webp" class="card-img-top" alt="Rice">
+          <div class="card-body">
+            <h5 class="card-title">Rice</h5>
+          </div>
+        </div>
+      </div>
+
+      <!-- Maize Card -->
+      <div class="col-md-3 crop-card">
+        <div class="card" data-bs-toggle="modal" data-bs-target="#maizeModal">
+          <img src="maize.webp" class="card-img-top" alt="Maize">
+          <div class="card-body">
+            <h5 class="card-title">Maize</h5>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3 crop-card">
+        <div class="card" data-bs-toggle="modal" data-bs-target="#tomato">
+          <img src="Tomato.webp" class="card-img-top" alt="Maize">
+          <div class="card-body">
+            <h5 class="card-title">Tomato</h5>
+          </div>
+        </div>
+      </div>
+
+
+            <div class="col-md-3 crop-card">
+        <div class="card" data-bs-toggle="modal" data-bs-target="#radish">
+          <img src="radish.webp" class="card-img-top" alt="Maize">
+          <div class="card-body">
+            <h5 class="card-title">Radish</h5>
+          </div>
+        </div>
+      </div>
+
+
+            <div class="col-md-3 crop-card">
+        <div class="card" data-bs-toggle="modal" data-bs-target="#onion">
+          <img src="onion.webp" class="card-img-top" alt="Maize">
+          <div class="card-body">
+            <h5 class="card-title">Onion
+
+            </h5>
+          </div>
+        </div>
+      </div>
+
+
+            <div class="col-md-3 crop-card">
+        <div class="card" data-bs-toggle="modal" data-bs-target="#carrot">
+          <img src="Carrot.webp" class="card-img-top" alt="Maize">
+          <div class="card-body">
+            <h5 class="card-title">Carrot</h5>
+          </div>
+        </div>
+      </div>
+
+ 
+
+
+    </div>
+  </div>
+
+  <!-- Modals for Crop Details -->
+  <!-- Wheat Modal -->
+  <div class="modal fade" id="wheatModal" tabindex="-1">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header bg-success text-white">
+          <h5 class="modal-title">Wheat 🌾</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <img src="wheat.webp" class="img-fluid mb-3" alt="Wheat">
+          <p><strong>Climate:</strong> Cool temperate regions with moderate rainfall.</p>
+          <p><strong>Soil:</strong> Well-drained loamy soil rich in organic matter.</p>
+          <p><strong>Uses:</strong> Staple food, flour, bread, pasta.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Rice Modal -->
+  <div class="modal fade" id="riceModal" tabindex="-1">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header bg-success text-white">
+          <h5 class="modal-title">Rice 🍚</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <img src="rice.webp" class="img-fluid mb-3" alt="Rice">
+          <p><strong>Climate:</strong> Warm temperatures with abundant water.</p>
+          <p><strong>Soil:</strong> Clayey soil with good water retention.</p>
+          <p><strong>Uses:</strong> Staple food for billions, used in diverse cuisines.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Maize Modal -->
+  <div class="modal fade" id="maizeModal" tabindex="-1">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header bg-success text-white">
+          <h5 class="modal-title">Maize 🌽</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <img src="maize.webp" class="img-fluid mb-3" alt="Maize">
+          <p><strong>Climate:</strong> Sunny climates with fertile soil.</p>
+          <p><strong>Soil:</strong> Sandy loam soil with good drainage.</p>
+          <p><strong>Uses:</strong> Food, fodder, biofuel, industrial products.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+   <div class="modal fade" id="tomato" tabindex="-1">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header bg-success text-white">
+          <h5 class="modal-title">Tomato</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <img src="tomato.webp" class="img-fluid mb-3" alt="Maize">
+          <p><strong>Climate:</strong> Sunny climates with fertile soil.</p>
+          <p><strong>Soil:</strong> Sandy loam soil with good drainage.</p>
+          <p><strong>Uses:</strong> Food, fodder, biofuel, industrial products.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+   <div class="modal fade" id="onion" tabindex="-1">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header bg-success text-white">
+          <h5 class="modal-title">Onion</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <img src="onion.webp" class="img-fluid mb-3" alt="Maize">
+          <p><strong>Climate:</strong> Sunny climates with fertile soil.</p>
+          <p><strong>Soil:</strong> Sandy loam soil with good drainage.</p>
+          <p><strong>Uses:</strong> Food, fodder, biofuel, industrial products.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+   <div class="modal fade" id="radish" tabindex="-1">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header bg-success text-white">
+          <h5 class="modal-title">Radish</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <img src="radish.webp" class="img-fluid mb-3" alt="Maize">
+          <p><strong>Climate:</strong> Sunny climates with fertile soil.</p>
+          <p><strong>Soil:</strong> Sandy loam soil with good drainage.</p>
+          <p><strong>Uses:</strong> Food, fodder, biofuel, industrial products.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+   <div class="modal fade" id="carrot" tabindex="-1">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header bg-success text-white">
+          <h5 class="modal-title">Carrot </h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <img src="Carrot.webp" class="img-fluid mb-3" alt="Maize">
+          <p><strong>Climate:</strong> Sunny climates with fertile soil.</p>
+          <p><strong>Soil:</strong> Sandy loam soil with good drainage.</p>
+          <p><strong>Uses:</strong> Food, fodder, biofuel, industrial products.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-3">
+    <p>&copy; 2025 Crop Recommendation System</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // Simple search filter
+    document.getElementById('cropSearch').addEventListener('keyup', function() {
+      let filter = this.value.toLowerCase();
+      document.querySelectorAll('#cropList .crop-card').forEach(function(card) {
+        let text = card.innerText.toLowerCase();
+        card.style.display = text.includes(filter) ? '' : 'none';
+      });
+    });
+  </script>
+</body>
+</html>
